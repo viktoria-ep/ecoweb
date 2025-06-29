@@ -1,0 +1,184 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+  color: #030a06;
+  background-color: #ebf8ed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+/* ===== common ===== */
+
+.section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 64px;
+  }
+}
+
+.section-title {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+@media screen and (min-width: 1440px) {
+  .section-title {
+    font-size: 48px;
+  }
+}
+
+/* ===== About ===== */
+
+.section-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/about/about-mob-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 64px 0;
+}
+
+@media (min-resolution: 2x) {
+  .section-about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/about/about-mob@2x-min.jpg);
+  }
+}
+
+.about-title {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.about-subtitle {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .section-about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/about/about-tab-min.jpg);
+    padding: 80px 0;
+  }
+
+  @media (min-resolution: 2x) {
+    .section-about {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../images/about/about-tab@2x-min.jpg);
+    }
+  }
+
+  .about-title {
+    margin-bottom: 16px;
+  }
+
+  .about-subtitle {
+    margin-bottom: 24px;
+  }
+
+  .about-text {
+    font-size: 18px;
+    max-width: 573px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section-about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/about/about-desk-min.jpg);
+    padding-top: 112px;
+    padding-bottom: 94px;
+  }
+
+  @media (min-resolution: 2x) {
+    .section-about {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../images/about/about-desk@2x-min.jpg);
+    }
+  }
+
+  .about-subtitle {
+    max-width: 429px;
+    font-style: 56px;
+    margin: 0 auto 24px;
+  }
+}
