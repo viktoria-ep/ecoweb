@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,17 +20,173 @@
     <title>EcoWeb</title>
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="container header-container">
+        <a class="header-logo" href="./index.html">
+          <img
+            class="header-logo-icon"
+            src="./images/logo-icon.svg"
+            alt="logo"
+            width="84"
+            height="36"
+        /></a>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Про нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#advantages">Переваги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#assortment">Асортимент</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Галерея</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#feedbacks">Відгуки</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#support">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="contacts">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+380999091122"
+                >+38 (099) 909 11 22</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:hello@ecotote.com"
+                >hello@ecotote.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu" data-menu>
+        <div class="container menu-container">
+          <div class="menu-header">
+            <a class="menu-logo" href="./index.html"
+              ><img
+                class="menu-logo-icon"
+                src="./images/logo-icon.svg"
+                alt="logo"
+                width="84"
+                height="36"
+            /></a>
+            <button class="menu-close" data-menu-close>
+              <svg class="menu-close-icon" width="32" height="32">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+          <nav class="menu-nav">
+            <ul class="menu-nav-list">
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#about">Про нас</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#advantages">Переваги</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#assortment">Асортимент</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#gallery">Галерея</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#feedbacks">Відгуки</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#support">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="menu-contacts">
+            <ul class="menu-contacts-list">
+              <li class="menu-contacts-item">
+                <a class="menu-contacts-link" href="tel:+380999091122"
+                  >+38 (099) 909 11 22</a
+                >
+              </li>
+              <li class="menu-contacts-item">
+                <a class="menu-contacts-link" href="mailto:hello@ecotote.com"
+                  >hello@ecotote.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </header>
 
-    <section class="section section-about">
-      <div class="container">
-        <h2 class="section-title about-title">Природність</h2>
-        <h3 class="about-subtitle section-title">Турбота про планету</h3>
-        <p class="about-text">
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-wrapper">
+          <h1 class="hero-title section-title">
+            <span lang="en">EcoTote</span> — Стиль, що не шкодить планеті
+          </h1>
+          <div class="hero-advertise-wrapper">
+            <p class="hero-text section-text">
+              Екологічні сумки для тих, хто дбає про майбутнє. Обирайте стиль та
+              відповідальність разом з <span lang="en">EcoTote</span>.
+            </p>
+            <a href="#assortment" class="hero-btn section-btn">Купити зараз</a>
+          </div>
+        </div>
+        <picture>
+          <source
+            srcset="
+              ./images/hero/hero-image-desktop.jpg    1x,
+              ./images/hero/hero-image-desktop-2x.jpg 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ./images/hero/hero-image-tablet.jpg    1x,
+              ./images/hero/hero-image-tablet-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/hero/hero-image-mobile.jpg    1x,
+              ./images/hero/hero-image-mobile-2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="hero-image"
+            src="./images/hero/hero-image-mobile.jpg"
+            width="1312"
+            height="498"
+            alt="Eco Bags"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container div-about">
+        <h2 class="about-title">Природність</h2>
+        <h3 class="section-title about-subtitle">Турбота про планету</h3>
+        <p class="section-text section-text-about">
           Ми використовуємо органічну бавовну, перероблений пластик, льон та
           коноплі для наших сумок.
         </p>
       </div>
     </section>
+
+    <script src="./menu.js"></script>
   </body>
 </html>
