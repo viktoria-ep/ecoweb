@@ -52,7 +52,7 @@ a {
 }
 
 button {
-  cursor: url(./images/leaf-cursor.svg), auto;
+  cursor: url(../images/leaf-cursor.svg), auto;
   transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 350ms cubic-bezier(0.4, 0, 0.2, 1),
     cursor 350ms cubic-bezier(0.075, 0.82, 0.165, 1),
@@ -60,7 +60,7 @@ button {
 }
 button:hover,
 button:focus {
-  cursor: url(./images/leaf-cursor.svg), auto;
+  cursor: url(../images/leaf-cursor.svg), auto;
   border: 1px solid #113916;
   background-color: #113916;
   opacity: 0.6;
@@ -409,7 +409,7 @@ button:active {
   text-align: center;
   margin-bottom: 24px;
   width: 100%;
-  cursor: url(./images/leaf-cursor.svg), auto;
+  cursor: url(../images/leaf-cursor.svg), auto;
   transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 350ms cubic-bezier(0.4, 0, 0.2, 1),
     cursor 350ms cubic-bezier(0.075, 0.82, 0.165, 1),
@@ -418,7 +418,7 @@ button:active {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  cursor: url(./images/leaf-cursor.svg), auto;
+  cursor: url(../images/leaf-cursor.svg), auto;
   border: 1px solid #113916;
   background-color: #113916;
   opacity: 0.6;
@@ -1186,7 +1186,7 @@ textarea:not(:placeholder-shown):invalid {
 }
 
 .form-btn {
-  cursor: url(./images/leaf-cursor.svg), auto;
+  cursor: url(../images/leaf-cursor.svg), auto;
   border: 1px solid #030a06;
   border-radius: 6px;
   padding: 12px 24px;
@@ -1204,7 +1204,7 @@ textarea:not(:placeholder-shown):invalid {
 
 .form-btn:hover,
 .form-btn:focus {
-  cursor: url(./images/leaf-cursor.svg), auto;
+  cursor: url(../images/leaf-cursor.svg), auto;
   border: 1px solid #113916;
   background: #113916;
   opacity: 0.6;
