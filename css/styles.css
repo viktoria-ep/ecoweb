@@ -430,6 +430,23 @@ button:active {
 
 .hero-image {
   border-radius: 40px;
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-image:hover {
+  animation: zoomOnce 1.2s forwards;
+}
+
+@keyframes zoomOnce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -531,6 +548,7 @@ button:active {
     padding-top: 80px;
     padding-bottom: 80px;
     max-width: 768px;
+    width: 100%;
   }
 
   @media (min-resolution: 2x) {
@@ -602,6 +620,7 @@ button:active {
 .section-text.section-text-advantages.text {
   text-align: left;
   max-width: 288px;
+  margin-bottom: 48px;
 }
 
 .advantages-list-item {
@@ -663,6 +682,11 @@ button:active {
     height: auto;
     display: block;
     margin-bottom: 32px;
+    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .img-advantages:hover {
+    transform: scale(1.06);
   }
 
   .img-advantages.wide {
@@ -757,6 +781,7 @@ button:active {
 }
 
 /* ASSORTMENT-LIST */
+
 .assortment-list {
   display: flex;
   flex-wrap: wrap;
@@ -784,6 +809,11 @@ button:active {
 .assortment-img {
   border-radius: 32px;
   overflow: hidden;
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.assortment-img:hover {
+  transform: scale(1.05);
 }
 
 .item-content {
@@ -888,6 +918,22 @@ button:active {
   object-fit: cover;
   display: block;
   border-radius: 32px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  /* transform: scale(1.05); */
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.07);
+  }
 }
 
 #item2 {
