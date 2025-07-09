@@ -488,7 +488,11 @@ button:active {
 /* ===== About ===== */
 
 .section.about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
     url(../images/about/about-bg-mob@1x.jpg);
 
   background-repeat: no-repeat;
@@ -532,14 +536,22 @@ button:active {
 
 @media (min-resolution: 2x) {
   .section.about {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
       url(../images/about/about-bg-mob@2x.jpg);
   }
 }
 
 @media only screen and (min-width: 768px) {
   .section.about {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
       url(../images/about/about-bg-tab@1x.jpg);
     /* image-set(
         url(/img/about/about-bg-tab@1x.jpg) 1x,
@@ -553,7 +565,11 @@ button:active {
 
   @media (min-resolution: 2x) {
     .section.about {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
         url(../images/about/about-bg-tab@2x.jpg);
     }
   }
@@ -575,7 +591,11 @@ button:active {
 
 @media only screen and (min-width: 1440px) {
   .section.about {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
       url(../images/about/about-bg@1x.jpg);
     /* image-set(
         url(/img/about/about-bg@1x.jpg) 1x,
@@ -588,7 +608,11 @@ button:active {
 
   @media (min-resolution: 2x) {
     .section.about {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4),
+          rgba(0, 0, 0, 0.4)
+        ),
         url(../images/about/about-bg@2x.jpg);
     }
 
